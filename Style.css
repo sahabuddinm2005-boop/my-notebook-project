@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.notebook-page {
+  width: 800px;
+  min-height: 1000px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 40px;
+}
+.notebook-page::before {
+  content: "";
+  position: absolute;
+  top: 110px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff4d4d;
+}
+.notebook-page::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 2px;
+  height: 100%;
+  background-color: #ff4d4d;
+}
+
+.lines {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#99ccff 1px, transparent 1px);
+  background-size: 100% 30px;
+  padding-left: 105px;
+  padding-right: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #333;
+}
+.page-info {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  border: 2px solid #ff4d4d;
+  border-radius: 5px;
+  padding: 10px;
+  color: #ff4d4d;
+  font-weight: bold;
+  line-height: 1.5;
+}
+#button1 {
+  position: fixed;
+  top: 280px;
+  left: 10px;
+  height: 35px;
+  width: 25px;
+  font-size: medium;
+  font-weight: 900;
+  border: 1px solid#097ff4;
+  border-radius: 5px;
+  color: rgb(198, 60, 6);
+}
+
+#button2 {
+  position: fixed;
+  top: 280px;
+  right: 10px;
+  height: 35px;
+  width: 25px;
+  font-size: medium;
+  font-weight: 900;
+  border: 1px solid#097ff4;
+  border-radius: 5px;
+  color: rgb(198, 60, 6);
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #097ff4;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #07dbee;
+}
+table {
+  font-size: 14px;
+  width: 100%;
+  border-collapse: collapse;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+}
+/* td {
+  padding: 0px 30px 0px 20px;
+} */
+.pno {
+  text-align: center;
+  justify-content: center;
+}
+.pno:hover {
+  color: #097ff4;
+  cursor: pointer;
+}
+.bottom-line {
+  position: absolute;
+  bottom: 69px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff4d4d;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img_vid {
+  display: flex;
+}
+video {
+  height: 150px;
+  width: 350px;
+}
+img {
+  height: 150px;
+  width: 310px;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  /* image ko middle me karne ke liye */
+  /* margin-left: auto;
+     margin-right: auto; */
+}
+
+@media()
